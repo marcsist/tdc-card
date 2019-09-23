@@ -1,0 +1,386 @@
+
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+</style> 
+</head>
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+    <span><b>Sema Code Quality Platform</b></span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Download report">
+  <mat-icon>menu</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item disabled>
+    <mat-icon>settings_applications</mat-icon>
+    <span>Admin</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>perm_identity</mat-icon>
+    <span>Profile</span>
+  </button>
+</mat-menu>
+            </mat-toolbar-row>
+</mat-toolbar>
+   <mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Technical Debt</mat-card-title>
+    <mat-card-subtitle>repository-name</mat-card-subtitle>
+          <span class="example-spacer"></span>
+                    <button mat-icon-button aria-label="Example icon-button with a heart icon">
+            <mat-icon>
+              tune
+            </mat-icon>
+            </button>
+          <button mat-icon-button aria-label="Example icon-button with a heart icon">
+            <mat-icon>
+              more_horizontal
+            </mat-icon>
+          </button>
+  </mat-card-header>
+
+  <mat-card-content>
+      <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
+  <mat-tab label="All Files">  
+    <div class ="page">
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+              <div class ="title">
+                src/analytics/someFile.java 
+              </div>
+              <div class="filetype">
+                .java
+              </div>
+              <div class="td"> 
+                $ 272
+              </div>
+              <div class="dloc">
+                1.85 $/LoC
+                </div>
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+
+        <mat-selection-list>
+          <mat-list-option>
+            <h3 matLine> Fix Line Level warnings</h3>
+            <p matLine>523 line level warnings in 5 categories</p>
+            <p matLine><a href=www.semasoftware.com> view all </a></p>
+          </mat-list-option>
+          <mat-list-option>
+            <h3 matLine>Reduce complexity</h3>
+            <p matLine>Consider breaking down into multiple files</p>
+            <p matLine>Complexity: 95, target: 60 </p>
+          </mat-list-option>
+          <mat-list-option>
+            <h3 matLine>Duplicated blocks of code</h3>
+            <p matLine>2 duplicate blocks in 3 files</p>
+            <p matLine><a href=www.semasoftware.com> duplicate details </a></p>
+          </mat-list-option>
+      <mat-action-row>
+          <button mat-icon-button aria-label="Example icon-button with a heart icon">
+            <mat-icon>
+              call_made
+            </mat-icon>
+          </button>
+          <button mat-icon-button aria-label="Example icon-button with a heart icon">
+            <mat-icon>
+              today
+            </mat-icon>
+          </button>
+          <button mat-flat-button>
+            Ignore
+          </button>
+
+          <button mat-stroked-button color="primary">
+            Add to Collection
+          </button>
+
+      </mat-action-row>
+        </mat-selection-list>
+
+
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+                      <div class ="title">
+            src/analytics/someOtherFile.java
+              </div>
+              <div class="filetype">
+                .java
+              </div>
+              <div class="td"> 
+                $ 221
+              </div>
+              <div class="dloc">
+                3.85 $/LoC
+                </div>
+
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+        <mat-action-row>
+                <button mat-icon-button aria-label="Example icon-button with a heart icon">
+            <mat-icon>
+              launch
+            </mat-icon>
+          </button>
+          <button mat-icon-button aria-label="Example icon-button with a heart icon">
+            <mat-icon>
+              today
+            </mat-icon>
+            </button>
+          <button mat-button>Ignore</button>
+        <button mat-button color="primary">Add to Collection</button>
+      </mat-action-row>
+        <mat-selection-list>
+
+          <mat-list-option>
+            <h3 matLine>Reduce complexity</h3>
+            <p matLine>Consider breaking down into multiple files</p>
+            <p matLine>Complexity: 95, target: 60 </p>
+          </mat-list-option>
+          <mat-list-option>
+            <h3 matLine>Duplicated blocks of code</h3>
+            <p matLine>2 duplicate blocks in 3 files</p>
+            <p matLine><a href=w ww.semasoftware.com> duplicate details </a></p>
+          </mat-list-option>
+
+        </mat-selection-list>
+
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            
+            <div class ="title">
+              src/filepath/someFile.py
+            </div>
+            <div class="filetype">
+              .py
+            </div>
+            <div class="td"> 
+              $ 95
+            </div>
+            <div class="dloc">
+              4.33 $/LoC
+            </div>
+
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+
+        <mat-selection-list>
+          <mat-list-option>
+            <h3 matLine>Duplicated blocks of code</h3>
+            <p matLine>2 duplicate blocks in 3 files</p>
+            <p matLine><a href=w ww.semasoftware.com> duplicate details </a></p>
+          </mat-list-option>
+
+        </mat-selection-list>
+      <mat-action-row>
+              <button mat-icon-button aria-label="Example icon-button with a heart icon">
+            <mat-icon>
+              launch
+            </mat-icon>
+          </button>
+          <button mat-icon-button aria-label="Example icon-button with a heart icon">
+            <mat-icon>
+              today
+            </mat-icon>
+            </button>
+        <button mat-button>Ignore</button>
+        <button mat-button>Add to Collection</button>
+      </mat-action-row>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            
+            <div class ="title">
+                <button mat-button color="primary">Adjust Goals</button>
+              </div>
+      
+          </mat-panel-title>
+          
+
+        </mat-expansion-panel-header>
+        
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+              <div class ="title">
+                Complexity 
+              </div>
+              <div class="filetype">
+                80%
+              </div>
+
+                <mat-slider></mat-slider>
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+
+        <mat-selection-list>
+          <mat-list-option>
+            <h3 matLine> Fix Line Level warnings</h3>
+            <p matLine>523 line level warnings in 5 categories</p>
+            <p matLine><a href=w ww.semasoftware.com> view all </a></p>
+          </mat-list-option>
+          <mat-list-option>
+            <h3 matLine>Reduce complexity</h3>
+            <p matLine>Consider breaking down into multiple files</p>
+            <p matLine>Complexity: 95, target: 60 </p>
+          </mat-list-option>
+          <mat-list-option>
+            <h3 matLine>Duplicated blocks of code</h3>
+            <p matLine>2 duplicate blocks in 3 files</p>
+            <p matLine><a href=w ww.semasoftware.com> duplicate details </a></p>
+          </mat-list-option>
+
+        </mat-selection-list>
+      </mat-expansion-panel>
+            <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+              <div class ="title">
+                Warnings 
+              </div>
+              <div class="filetype">
+                100%
+              </div>
+
+                <mat-slider></mat-slider>
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+
+        <mat-selection-list>
+          <mat-list-option>
+            <h3 matLine> Fix Line Level warnings</h3>
+            <p matLine>523 line level warnings in 5 categories</p>
+            <p matLine><a href=w ww.semasoftware.com> view all </a></p>
+          </mat-list-option>
+          <mat-list-option>
+            <h3 matLine>Reduce complexity</h3>
+            <p matLine>Consider breaking down into multiple files</p>
+            <p matLine>Complexity: 95, target: 60 </p>
+          </mat-list-option>
+          <mat-list-option>
+            <h3 matLine>Duplicated blocks of code</h3>
+            <p matLine>2 duplicate blocks in 3 files</p>
+            <p matLine><a href=w ww.semasoftware.com> duplicate details </a></p>
+          </mat-list-option>
+
+        </mat-selection-list>
+      </mat-expansion-panel>
+            <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+              <div class ="title">
+                Duplicate Blocks 
+              </div>
+              <div class="filetype">
+                80%
+              </div>
+
+                <mat-slider></mat-slider>
+
+
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+
+        <mat-selection-list>
+          <mat-list-option>
+            <h3 matLine> Fix Line Level warnings</h3>
+            <p matLine>523 line level warnings in 5 categories</p>
+            <p matLine><a href=w ww.semasoftware.com> view all </a></p>
+          </mat-list-option>
+          <mat-list-option>
+            <h3 matLine>Reduce complexity</h3>
+            <p matLine>Consider breaking down into multiple files</p>
+            <p matLine>Complexity: 95, target: 60 </p>
+          </mat-list-option>
+          <mat-list-option>
+            <h3 matLine>Duplicated blocks of code</h3>
+            <p matLine>2 duplicate blocks in 3 files</p>
+            <p matLine><a href=w ww.semasoftware.com> duplicate details </a></p>
+          </mat-list-option>
+
+        </mat-selection-list>
+      </mat-expansion-panel>
+            <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+              <div class ="title">
+                Test Lines 
+              </div>
+              <div class="filetype">
+                20%
+              </div>
+
+                <mat-slider></mat-slider>
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+
+        <mat-selection-list>
+          <mat-list-option>
+            <h3 matLine> Fix Line Level warnings</h3>
+            <p matLine>523 line level warnings in 5 categories</p>
+            <p matLine><a href=w ww.semasoftware.com> view all </a></p>
+          </mat-list-option>
+          <mat-list-option>
+            <h3 matLine>Reduce complexity</h3>
+            <p matLine>Consider breaking down into multiple files</p>
+            <p matLine>Complexity: 95, target: 60 </p>
+          </mat-list-option>
+          <mat-list-option>
+            <h3 matLine>Duplicated blocks of code</h3>
+            <p matLine>2 duplicate blocks in 3 files</p>
+            <p matLine><a href=w ww.semasoftware.com> duplicate details </a></p>
+          </mat-list-option>
+
+        </mat-selection-list>
+      </mat-expansion-panel>
+            <mat-action-row>
+
+          <button mat-flat-button>
+            Cancel
+          </button>
+
+          <button mat-flat-button color="primary">
+            Apply
+          </button>
+
+      </mat-action-row>
+      </mat-expansion-panel>
+      
+    </mat-accordion>
+
+
+    </div>
+
+  </mat-tab>
+  <mat-tab label ="Duplicates">Something</mat-tab>
+  <mat-tab label ="Line Level"> Detail </mat-tab>
+  <mat-tab label ="Complexity"> Detail </mat-tab>
+  <mat-tab label ="Test Lines"> Detail </mat-tab>
+  </mat-tab-group>
+
+
+
+
+
+ 
+
+
+
+        <!-- Copyright 2019 Google Inc. All Rights Reserved.
+        Use of this source code is governed by an MIT-style license that
+        can be found in the LICENSE file at http://angular.io/license -->

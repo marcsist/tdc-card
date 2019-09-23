@@ -1,0 +1,88 @@
+
+
+
+mat-toolbar{
+  height: 155px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+mat-toolbar-row{
+max-width:940px;
+align: center;
+position: flex;
+margin: 104px auto;
+font-size: 1.3em;
+}
+
+mat-card.example-card{
+max-width:940px;
+align: center;
+position: flex;
+margin: 52px auto;
+padding: 16px 0 0 0 ;
+}
+
+mat-tab-group{
+max-width:940px;
+align: center;
+position: flex;
+margin: 0 auto;
+}
+p {
+color: #757475
+}
+a {
+color: #0183E2
+}
+
+.title{
+  font-weight: 500;
+  color: #3a393a;
+  font-size: 1em;
+  flex: 0 0 50%;
+  padding: 10px 0;
+}
+
+mat-expansion-panel{
+box-sizing: auto;
+position: flex;
+width: 100%;
+}
+
+.filetype{
+  padding: 9px 0;
+    font-weight:300;
+  font-size: .85em;
+  flex: 0 0 10%;
+  color:#757475;
+}
+.td{
+    padding:7px 16px;
+width: 10%;
+    text-align: right;
+}
+.dloc{
+  font-weight:300;
+  font-size: .85em;
+    padding:8px 0;
+  color:#757475;
+  text-align: center;
+
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-button {
+border-radius: 99px;
+}
+.mat-stroked-button {
+border-radius: 99px;
+}
+
