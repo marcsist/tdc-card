@@ -1,5 +1,7 @@
 
-
+svg{
+  padding: 0 10px 0 0;
+}
 
 mat-toolbar{
   height: 155px;
