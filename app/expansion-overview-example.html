@@ -1,15 +1,17 @@
-
 <head>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
-</style> 
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+	</style>
 </head>
 <mat-toolbar color="primary">
-    <mat-toolbar-row>
-    <span><b>Sema Code Quality Platform</b></span>
+	<mat-toolbar-row>
+		<span><b>Sema Code Quality Platform</b></span>
     <span class="example-spacer"></span>
+    <mat-chip-list>
+      <mat-chip color="accent" selected>Activity</mat-chip>
+    </mat-chip-list>
     <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Download report">
-  <mat-icon>menu</mat-icon>
+  <mat-icon>more_vertical</mat-icon>
 </button>
 <mat-menu #menu="matMenu">
   <button mat-menu-item disabled>
@@ -26,9 +28,9 @@
    <mat-card class="example-card">
   <mat-card-header>
     <mat-card-title>Technical Debt</mat-card-title>
-    <mat-card-subtitle>repository-name</mat-card-subtitle>
+    <!--<mat-card-subtitle>repository-name</mat-card-subtitle>-->
           <span class="example-spacer"></span>
-                    <button mat-icon-button aria-label="Example icon-button with a heart icon">
+            <button mat-icon-button aria-label="Example icon-button with a heart icon">
             <mat-icon>
               tune
             </mat-icon>
@@ -43,7 +45,10 @@
   <mat-card-content>
       <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
   <mat-tab label="All Files">  
+
     <div class ="page">
+      <div class="canvas">
+      </div>
     <mat-accordion>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
@@ -367,7 +372,9 @@
     </div>
 
   </mat-tab>
-  <mat-tab label ="Duplicates">Something</mat-tab>
+  <mat-tab label ="Duplicates"> 
+   Something 
+  </mat-tab>
   <mat-tab label ="Line Level"> Detail </mat-tab>
   <mat-tab label ="Complexity"> Detail </mat-tab>
   <mat-tab label ="Test Lines"> Detail </mat-tab>
