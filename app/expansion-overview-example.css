@@ -1,10 +1,9 @@
 
 svg{
-  padding: 0 10px 0 0;
+  padding: 2px 16px 0 0;
 }
 
 mat-toolbar{
-  height: 155px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -14,10 +13,10 @@ height: 300px;
 
 }
 mat-toolbar-row{
-max-width:940px;
+//max-width:940px;
 align: center;
 position: flex;
-margin: 104px auto;
+margin: auto auto;
 font-size: 1.3em;
 }
 
